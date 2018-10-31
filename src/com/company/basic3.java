@@ -10,19 +10,24 @@ public class basic3 {
         System.out.print("numero: ");
         int num1 = cifras.nextInt();
         int total;
-        if (num1<=10 && num1>=1){
 
-            if(num1%2 == 0){
-                System.out.println("NO es un número primo "+ num1);
+        boolean var1=false;
+        if (num1<=10 && num1>=1) {
+            for (int i = 2; i < num1 - 1; i++) {
+                if (num1 % i == 0) {
+                    System.out.println("no es primo");
+                    var1=true;
+                    break;
+                }
             }
-            else {
-                System.out.println("Es un número primo "+ num1);
+
+            if (var1==false){
+                System.out.println("es primo");
             }
+
         } else {
             System.out.println("ERROR");
         }
-
-
     }
 }
 
