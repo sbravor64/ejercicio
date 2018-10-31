@@ -10,13 +10,8 @@ public class basic1 {
         System.out.print("AÑO: ");
         int year = año.nextInt();
 
-        if (year % 4 == 0) {
-            if (year % 100 == 0 && year % 4 == 0){
-                System.out.println("es bisiesto");
-            } else {
-                System.out.println("es bisiesto");
-            }
-
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("es bisiesto");
         } else {
             System.out.println("no es bisiesto");
         }
