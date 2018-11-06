@@ -10,16 +10,16 @@ public class basic5 {
         System.out.print("nota: ");
         float notas = nota.nextInt();
 
-        if (notas>5){
-            System.out.println("insuficiente");
+        if (notas<5){
+            System.out.print("insuficiente");
         } else if(notas>=5 && notas<=5.9){
-            System.out.println("suficiente");
+            System.out.print("suficiente");
         } else if(notas>=6 && notas<=6.9) {
-            System.out.println("OK");
+            System.out.print("OK");
         } else if(notas>=7 && notas<=8.4) {
-            System.out.println("Notable");
+            System.out.print("Notable");
         } else if(notas>=8.5 && notas<=10) {
-            System.out.println("Execelente");
+            System.out.print("Execelente");
         }
     }
 }
