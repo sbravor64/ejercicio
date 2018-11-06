@@ -8,7 +8,7 @@ public class basic5 {
 
         Scanner nota = new Scanner(System.in);
         System.out.print("nota: ");
-        float notas = nota.nextInt();
+        double notas = nota.nextDouble();
 
         if (notas<5){
             System.out.print("insuficiente");
