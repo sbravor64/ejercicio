@@ -1,21 +1,36 @@
 package com.company;
 
 import java.util.Scanner;
+
 public class pruebaexamen2 {
 
     public static void main(String[] args) {
-        int contar=0;
-        int num[] = new int[100];
-        Scanner teclado = new Scanner(System.in);
+        int comparar = 0;
+        int cont = 0;
+        int contgrups = 0;
+        int cantidad = 1;
 
-        for (int i = 0; i <num.length ; i++) {
-            num[i] = teclado.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
 
-            if(num[i]==num[i]){
-                contar++;
+        while(num!=0){
+            comparar = num;
+            num = sc.nextInt();
+
+            if(comparar != num){
+                cont++;
+
+                if(cantidad > contgrups){
+                    contgrups = cantidad;
+                }
+                cantidad = 1;
             }
-            System.out.println(contar);
+            else if(comparar == num){
+                cantidad++;
+            }
         }
+        System.out.println(cont);
+        System.out.println(contgrups);
     }
 }
 
