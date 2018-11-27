@@ -10,7 +10,7 @@ public class ejerciciohack {
         int num = tec.nextInt();
         int cont=0;
 
-        while(num>=1){
+        while(num>=1 | num<0){
             cont++;
             num=tec.nextInt();
         }
