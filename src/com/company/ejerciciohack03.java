@@ -19,19 +19,19 @@ public class ejerciciohack03 {
             numdd=tec.nextInt();
             if (numdd==0){
                 System.out.println("SI");
+            } while (numd+total==numdd && numdd!=0) {
+                numant = total;
+                numd = numdd;
+                total = tec.nextInt();
+                numdd=tec.nextInt();
+                if(numant+numd==total && numdd==0){
+                    System.out.println("SI");
+                    return;
+                } else if (numant+numd==total && numdd!=0 && numd+total==numdd){
+                } else {
+                    System.out.println("NO");
+                }
             }
-        } else if (total==1){
-              if(numd+num==total){
-                  numant=numd;
-                  numd=total;
-                  total=numdd;
-                  while (numant+numd==total){
-                      numant=numd;
-                      numd=total;
-                      total=tec.nextInt();
-                  }
-                  System.out.println("SI");
-              }
         } else {
             System.out.println("NO");
         }
