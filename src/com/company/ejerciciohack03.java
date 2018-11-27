@@ -13,7 +13,10 @@ public class ejerciciohack03 {
         int total=tec.nextInt();
         int numdd=0;
 
-        if (num==0 && numd==1 && total==0){
+
+        if(num!=0 && numd!=1){
+            System.out.println("NO");
+        }else if (num==0 && numd==1 && total==0){
             System.out.println("SI");
         } else if (num+numd==total){
             numdd=tec.nextInt();

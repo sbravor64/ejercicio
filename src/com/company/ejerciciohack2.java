@@ -28,6 +28,7 @@ public class ejerciciohack2 {
                 }
                 System.out.println(cont);
                 contt++;
+                num=tec.nextInt();
                 cont=0;
             }
         }
