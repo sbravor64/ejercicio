@@ -11,7 +11,6 @@ public class ejerciciohack003 {
         int numd = tec.nextInt();
         int numant;
         int total=0;
-        int numdd=0;
         boolean f = true;
 
 
