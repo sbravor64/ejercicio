@@ -8,18 +8,23 @@ public class ejerciciohack3 {
 
         Scanner tec = new Scanner(System.in);
         int num = tec.nextInt();
+        int numd = tec.nextInt();
         int numant;
-        int cont=0;
+        int total;
 
-        if(num>=0){
-            while(num!=0){
-                if (num % 7 == 0) {
+        if (num==0 && numd==1){
+            numant = tec.nextInt();
+            num=tec.nextInt();
+            total = tec.nextInt();
+            while(total>=1) {
+                if (numant + num == total) {
                     System.out.println("SI");
-                } else {
-                    System.out.println("NO");
                 }
-                num= tec.nextInt();
+                numant = num;
+                num=total;
+                total = tec.nextInt();
             }
         }
+
     }
 }
