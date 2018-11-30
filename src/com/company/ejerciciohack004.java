@@ -31,6 +31,8 @@ public class ejerciciohack004 {
                 } else {
                     f = false;
                 }
+            } else {
+                f=false;
             }
 
         if (f==true){

@@ -21,7 +21,7 @@ public class ejerciciohack05 {
                 if (num == 0 && numd == 1) {
                     total = tec.nextInt();
                     if(total==0){
-                        f=true;
+                        System.out.println("SI");
                         cont++;
                     } else if (num + numd == total) {
                         do {
@@ -31,21 +31,28 @@ public class ejerciciohack05 {
                         } while (num + numd == total);
 
                         if(total==0){
-                            f=true;
+                            System.out.println("SI");
                             cont++;
                         } else if (num + numd != total) {
-                            f = false;
+                            System.out.println("NO");
                             cont++;
                         }
                     } else {
-                        f = false;
+                        System.out.println("NO");
                         cont++;
                     }
+                } else {
+                    f=false;
+                    do {
+                        total = tec.nextInt();
+                    } while (total!=0);
+                    cont++;
+                    System.out.println("NO");
                 }
-            }
 
-                if(numd==0){
-                    return;
+                if (cant!=cont) {
+                    num = tec.nextInt();
+                    numd = tec.nextInt();
                 }
             }
         }
