@@ -12,28 +12,28 @@ public class ejerciciohack004 {
         int total=1;
         boolean f = true;
 
-            if (num == 0 && numd == 1) {
-                total = tec.nextInt();
+        if (num == 0 && numd == 1) {
+            total = tec.nextInt();
+            if(total==0){
+                f=true;
+            } else if (num + numd == total) {
+                do {
+                    num = numd;
+                    numd = total;
+                    total = tec.nextInt();
+                } while (num + numd == total);
+
                 if(total==0){
                     f=true;
-                } else if (num + numd == total) {
-                    do {
-                        num = numd;
-                        numd = total;
-                        total = tec.nextInt();
-                    } while (num + numd == total);
-
-                    if(total==0){
-                        f=true;
-                    } else if (num + numd != total) {
-                        f = false;
-                    }
-                } else {
+                } else if (num + numd != total) {
                     f = false;
                 }
             } else {
-                f=false;
+                f = false;
             }
+        } else {
+            f=false;
+        }
 
         if (f==true){
             System.out.println("SI");
