@@ -8,26 +8,25 @@ public class ejerciciohack6 {
 
         Scanner tec = new Scanner(System.in);
         int num = tec.nextInt();
-        int numd=0;
+        int numd= tec.nextInt();
         int numf=0;
 
-        if (num<10000000){
-            while (num!=numd){
-                numd=tec.nextInt();
-                numf=tec.nextInt();
-                if (numf==0){
+        if (numd!=0) {
+            while (num != 0) {
+                if (numd == 0) {
                     break;
+                } else {
+                    numf = numd;
+                    numd = tec.nextInt();
                 }
             }
-
-            if(num==numd || numd==0){
+            if (num == numf) {
                 System.out.println("SI");
             } else {
                 System.out.println("NO");
             }
-
+        } else {
+            System.out.println("SI");
         }
-
-
     }
 }
