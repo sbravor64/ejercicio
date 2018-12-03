@@ -13,7 +13,25 @@ public class ejerciciohack8 {
 
         if(num1!=0){
             num2=tec.nextInt();
+            num3=tec.nextInt();
+            if(num1==num2 && num2==num3){
+                cont++;
+            }
+            do {
+                num1=num2;
+                num2=num3;
+                num3=tec.nextInt();
+                if(num1==num2 && num2==num3){
+                    cont++;
+                }
+            } while(num3!=0);
 
-        } else {}
+        }
+
+        if (cont!=0){
+            System.out.println("SI");
+        } else {
+            System.out.println("NO");
+        }
     }
 }
