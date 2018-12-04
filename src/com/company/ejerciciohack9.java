@@ -7,26 +7,33 @@ public class ejerciciohack9 {
     public static void main(String[] args) {
 
         Scanner tec = new Scanner(System.in);
-        int num = tec.nextInt();
-        int cont=0;
+        int cant=tec.nextInt();
+        int num = tec.nextInt(),cont=0, contador=0;
+        boolean primo=true;
 
-
-        for(int i = 1; i <= num; i++) {
-            if (num % i == 0) {
-                cont++;
+        do {
+            while (num != 0) {
+                if (num <= 2) {
+                    primo = true;
+                } else {
+                    for (int x = 2; x < num; x++) {
+                        if (num % x == 0) {
+                            primo = false;
+                        }
+                    }
+                }
+                if (primo == true) {
+                    contador++;
+                }
+                num = tec.nextInt();
+                primo = true;
             }
-
-            if(num!=0){
+            if(cant!=cont){
+                System.out.println(contador);
+                contador=0;
                 num=tec.nextInt();
-            } else {
-                break;
             }
-        }
 
-        if(cont!=0){
-            System.out.println(cont);
-        } else {
-            System.out.println(cont);
-        }
+        } while(cant!=cont);
     }
 }
