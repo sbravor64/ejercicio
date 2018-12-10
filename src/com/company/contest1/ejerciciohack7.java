@@ -1,4 +1,4 @@
-package com.company;
+package com.company.contest1;
 
 import java.util.Scanner;
 
