@@ -2,26 +2,25 @@ package com.company.contest3;
 
 import java.util.Scanner;
 
-public class hack1 {
+public class hack2 {
 
     public static void main(String[] args) {
 
         Scanner tec = new Scanner(System.in);
-        int cant=tec.nextInt(), cont=0, i;
+        int cant=tec.nextInt(), ultimo, i;
 
         int[] num = new int[cant];
 
         for (i = 0; i < cant; i++) {
             num[i]=tec.nextInt();
-            cont=num[i];
 
-            if(i+1==cant) {
-                int j=i;
-                do {
-                    System.out.print(num[j] + " ");
-                    j--;
-                } while(j!=-1);
+            if(i+1==cant){
+                ultimo=num[i];
+                for (int j = 0; j < cant; j++) {
+                    System.out.print(num[j]+ultimo + " ");
+                }
             }
+
         }
     }
 }
