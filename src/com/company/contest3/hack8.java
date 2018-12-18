@@ -24,18 +24,14 @@ public class hack8 {
         //    System.out.println(" ");
         //}
 
-        int columna=tec.nextInt(), fila=tec.nextInt();
+        int columna=1, fila=1;
 
         while (columna!=0 && fila!=0){
-            for (int i = 0; i <columnas ; i++) {
-                for (int j = 0; j <filas ; j++) {
-                    if(tablero[i][j]==1){
-                        System.out.println("SI");
-                    }
-                }
+            columna=tec.nextInt()-1;
+            columna=tec.nextInt()-1;
+            if(tablero[columna][fila]==1){
+                System.out.println("SI");
             }
-            columna=tec.nextInt();
-            fila=tec.nextInt();
         }
     }
 }
