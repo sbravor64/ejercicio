@@ -17,21 +17,16 @@ public class hack8 {
             }
         }
 
-        //for (int i = 0; i <columnas ; i++) {
-        //    for (int j = 0; j <filas ; j++) {
-        //        System.out.print(tablero[i][j]+" ");
-        //    }
-        //    System.out.println(" ");
-        //}
+        int columna=tec.nextInt()-1, fila=tec.nextInt()-1;
 
-        int columna=1, fila=1;
-
-        while (columna!=0 && fila!=0){
-            columna=tec.nextInt()-1;
-            columna=tec.nextInt()-1;
+        do {
             if(tablero[columna][fila]==1){
                 System.out.println("SI");
+            } else {
+                System.out.println("NO");
             }
-        }
+            columna=tec.nextInt()-1;
+            fila=tec.nextInt()-1;
+        } while (columna+1!=0 && fila+1!=0);
     }
 }
