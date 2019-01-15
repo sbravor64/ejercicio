@@ -12,15 +12,15 @@ public class ejercicio5 {
         ulfrase--;
         boolean pali= true;
 
-            for (int i = 0; i <frase.length() ; i++) {
-                char carac = frase.charAt(i);
-                for (int j = 0; j <exe.length() ; j++) {
-                    char exec =exe.charAt(j);
+            for (int i = 0; i <exe.length() ; i++) {
+                for (int j = 0; j <frase.length() ; j++) {
+                    char carac = frase.charAt(j);
+                    char exec = exe.charAt(j);
                     if(exec!=carac){
-                        char carac1=frase.charAt(i);
+                        char carac1=frase.charAt(j);
                         char carac2=frase.charAt(ulfrase--);
 
-                        if(carac!=carac2){
+                        if(carac1!=carac2){
                             pali=false;
                             break;
                         }
