@@ -12,24 +12,23 @@ public class ejerciciodiv {
         int cociente =tec.nextInt();
         int residuo =tec.nextInt();
 
+        //correcto cociente y residuo
         int tcociente = dividendo/divisor;
         int tresiduo = dividendo%divisor;
 
         while(dividendo!=0 || divisor!=0 || cociente!=0 || residuo!=0){
             cont++;
             if(cociente!=tcociente || residuo!=tresiduo){
-                System.out.print(cont+")"+" "+tcociente);
+                System.out.print(cont+")"+" "+tcociente+" "+tresiduo);
+                System.out.println(" ");
             }
-            if(residuo!=tresiduo){
-                System.out.print(" "+tresiduo);
-            }
+
             dividendo =tec.nextInt();
             divisor =tec.nextInt();
             cociente =tec.nextInt();
             residuo =tec.nextInt();
             tcociente = dividendo/divisor;
             tresiduo = dividendo%divisor;
-            System.out.println();
         }
 
     }
