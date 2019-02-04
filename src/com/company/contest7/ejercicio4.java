@@ -12,7 +12,7 @@ public class ejercicio4 {
         for (int i = 0; i <=8 ; i++) {
             for (int j = 0; j <=8 ; j++) {
                 char carac=juego.charAt(j);
-                matriz[i][j]=carac;
+
                 System.out.print(matriz[i][j]);
             }
         }

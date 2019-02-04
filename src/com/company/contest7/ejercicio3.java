@@ -10,12 +10,11 @@ public class ejercicio3 {
         int x=0, y=0;
 
             for (int i = 0; i <direc.length() ; i++) {
-                char carac = direc.charAt(i);
-                if(carac=='N'){
+                if(direc.charAt(i)=='N'){
                     x++;
-                } else if(carac=='S'){
+                } else if(direc.charAt(i)=='S'){
                     x--;
-                } else if(carac=='E'){
+                } else if(direc.charAt(i)=='E'){
                     y++;
                 } else{
                     y--;
