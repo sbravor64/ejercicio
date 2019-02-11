@@ -25,10 +25,6 @@ public class ejercicio4 {
             }
         }
 
-        if(Bi==Ni){
-
-        }
-
 
 
 
