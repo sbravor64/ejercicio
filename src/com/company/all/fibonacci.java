@@ -18,7 +18,7 @@ public class fibonacci {
             if(num==0){
                 num=tec.nextInt();
                 if(num==1){
-                    int numdes=tec.nextInt();
+                    numdes=tec.nextInt();
                     do {
                         if(numant+num==numdes){
                             f=true;
